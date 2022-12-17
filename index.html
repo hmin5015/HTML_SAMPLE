@@ -22,6 +22,11 @@
       img { 
         max-width: 100%;
       }
+      .wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 4%;
+      }
       .home-content {
         text-align: center;
         margin-top: 10%;
@@ -45,7 +50,7 @@
       .button:hover {
         background: #0090aa;
       }
-            .logo {
+      .logo {
         width: 210px;
         margin-top: 14px;
       }
@@ -55,10 +60,6 @@
       }
       * {
         margin: 0;
-      }
-      body {
-        width: 1100px;
-        margin: 0 auto;
       }
       .main-nav {
         display: flex;
@@ -76,43 +77,38 @@
       .main-nav a:hover {
         color: #0bc;
       }
+      #home {
+        background-image: url(./images/main-bg.jpg);
+        min-height: 100vh;
+      }
+      .big-bg {
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
     </style>
   </head>
   <body>
-    <header class="page-header">
-      <h1>
-        <a href="index.html">
-          <img src="images/logo.svg" alt="WCB 카페 홈" class="logo" />
-        </a>
-      </h1>
-      <nav>
-        <ul class="main-nav">
-          <li><a href="news.html">News</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="home-content wrapper">
-      <article>
-        
-      </article>
-      <aside>사이드바 부분</aside>
-      <style>
-        .news-contents {
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 50px;
-        }
-        article {
-          width: 74%;
-        }
-        aside {
-          width: 22%;
-        }
-      </style>
-      <h2 class="page-title">We'll Make Your Day</h2>
-      <p>멋진 카페에서 힐링 시간을 가지세요. 첨가물을 넣지 않은 재료로 건강한 음식을 만듭니다.</p>
-      <a href="menu.html" class="button">메뉴보기</a>
+    <div id="home" class="big-bg">
+      <header class="page-header wrapper">
+        <h1>
+          <a href="index.html">
+            <img src="images/logo.svg" alt="WCB 카페 홈" class="logo" />
+          </a>
+        </h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="news.html">News</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="home-content wrapper">
+        <h2 class="page-title">We'll Make Your Day</h2>
+        <p>멋진 카페에서 힐링 시간을 가지세요. 첨가물을 넣지 않은 재료로 건강한 음식을 만듭니다.</p>
+        <a href="menu.html" class="button">메뉴보기</a>
+      </div>
+    </div>    
   </body>
 </html>
